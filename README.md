@@ -6,21 +6,3 @@ You may assume that each input would have exactly one solution, and you may not 
 
 You can return the answer in any order.
 
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        for i in range(len(nums)):
-            k = target - nums[i]
-            if k in nums:
-                c = nums.index(k)
-                if i!=c:
-                    return[i,c]
-                    break
-                else:
-                    c+=1
-            else: 
-                continue
